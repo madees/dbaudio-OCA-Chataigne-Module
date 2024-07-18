@@ -1,0 +1,135 @@
+{
+	"name": "d&b amplifier",
+	"type": "TCP Client",
+	"path": "Hardware",
+	
+	"version": "1.0.0",
+	"description": "Module to control the d&b audiotechnik amplifiers by OCA.\n\nPlease visit https://www.dbaudio.com/global/en/products/all/product-types/amplifiers/ to know more about those devices.\n\nChataigne Module specific documentation can be found in the README on GitHub:",
+	"url": "https://github.com/madees/dbaudio-amps-Chataigne-Module",
+	"downloadURL": "https://github.com/madees/dbaudio-amps-Chataigne-Module/archive/master.zip",
+	
+	"hasInput": false,
+	"hasOutput": true,
+	"hideDefaultCommands":true,
+
+	"hideDefaultParameters":
+	[
+		"protocol",
+		"messageStructure",
+		"autoAdd",
+		"firstValueIsTheName",
+		"receiveFrequency",
+		"output/local",
+		"output/remotePort",
+		"pass_through"
+	],
+
+	"parameters":
+	{
+		"Model":
+		{
+			"type":"Enum",
+			"options":
+			{
+				"please select and set IP...":"none",
+				"5D":"5D",
+				"10D":"10D",
+				"30D":"30D",
+				"40D":"40D",
+				"D20":"D20",
+				"D40":"D40",
+				"D80":"D80"
+			}
+		}
+	},
+
+	"defaults":
+	{
+		"autoAdd":false,
+		"firstValueIsTheName":false,
+		"Output":
+		{
+			"RemotePort":30013,
+			"RemoteHost":"192.168.1.42",
+			"local":false
+		}
+	},
+
+
+	"scripts":
+	[
+		"db_amps_OCA.js"
+	],
+
+	"commands":
+	{
+		"ON":
+		{
+			"menu":"Power",
+			"callback":"powerOn"
+		},
+		"OFF":
+		{
+			"menu":"Power",
+			"callback":"powerOff"
+		},
+
+		"Mute A":
+		{
+			"menu":"Mute",
+			"callback":"muteA"
+		},
+		"Mute B":
+		{
+			"menu":"Mute",
+			"callback":"muteB"
+		},
+		"Mute C":
+		{
+			"menu":"Mute",
+			"callback":"muteC"
+		},
+		"Mute D":
+		{
+			"menu":"Mute",
+			"callback":"muteD"
+		},
+
+		"unMute A":
+		{
+			"menu":"unMute",
+			"callback":"unMuteA"
+		},
+		"unMute B":
+		{
+			"menu":"unMute",
+			"callback":"unMuteB"
+		},
+		"unMute C":
+		{
+			"menu":"unMute",
+			"callback":"unMuteC"
+		},
+		"unMute D":
+		{
+			"menu":"unMute",
+			"callback":"unMuteD"
+		},
+
+		"Amp preset recall":
+		{
+			"menu":"",
+			"callback":"ampPresetRecall",
+			"parameters":
+			{
+				"Select":
+				{
+					"type":"Integer",
+					"min":1,
+					"max":15
+				}
+			}
+		}
+
+	}
+}
