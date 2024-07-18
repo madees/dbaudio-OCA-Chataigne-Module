@@ -21,7 +21,7 @@ For global support on how to use Chataigne and its modules, please join us on Di
 https://discord.com/invite/ngnJ5z my contact there is also "madees".
 
 ## Installation
-To install the Custom Module, download the zip archive and unzip it to you Chataigne/Modules/ folder. Restart Chataigne or go to menu File>Reload custom Modules.
+To install the Custom Module, download the zip archive (on the top right green "Code" button of this window, drop down arrow, select "Local / download zip" option) and unzip it to you /Chataigne/Modules/ folder. Restart Chataigne or go to menu File>Reload custom Modules.
 
 ## Principle of use
 You may use Module Commands to control basic amp features like Power, Mutes, amp presets recall.
@@ -39,8 +39,8 @@ Target device IP. Default is 192.168.1.42.
 Commands are ready to use with the "Command tester" tool, Templates or as outputs from the State machine and Sequences in Time Machine, or even from scripts.
 
 #### Amp preset recall
-Please note that 5D doesn't have amp preset, so this command is useless with the device model.
 Integer parameter from 1 to 15.
+Please note that 5D doesn't have amp preset, so this command is useless with this device model.
 
 #### Power on
 #### Power off
