@@ -1,5 +1,5 @@
 # d&b audiotechnik amplifiers OCA Chataigne Module
-Chataigne module to control d&amp;b audiotechnik amplifiers with OCA protocol.  
+Chataigne module to control d&amp;b audiotechnik amplifiers with OCA/AES70 TCP protocol.  
 
 This community module is NOT OFFICIALLY supported by d&b audiotechnik.
 It is publicly available to enable interested users to experiment, extend and create their own adaptations.
@@ -15,7 +15,7 @@ And Ben's Youtube channel where you can find tutorials : https://youtu.be/RSBU9M
 
 To learn more about d&amp;b audiotechnik amps, please visit : https://www.dbaudio.com/global/en/products/all/product-types/amplifiers/  
 
-To learn more about OCA protocol, please visit : https://ocaalliance.com/
+To learn more about OCA/AES70 protocol, please visit : https://ocaalliance.com/what-is-aes70/
 
 For global support on how to use Chataigne and its modules, please join us on Discord : 
 https://discord.com/invite/ngnJ5z my contact there is also "madees".
