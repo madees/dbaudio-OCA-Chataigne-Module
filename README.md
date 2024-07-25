@@ -1,4 +1,4 @@
-# dbaudio-amps-Chataigne-Module
+# d&b audiotechnik amplifiers OCA Chataigne Module
 Chataigne module to control d&amp;b audiotechnik amplifiers with OCA protocol.  
 
 This community module is NOT OFFICIALLY supported by d&b audiotechnik.
