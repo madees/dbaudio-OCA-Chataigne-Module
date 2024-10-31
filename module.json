@@ -3,7 +3,7 @@
 	"type": "TCP Client",
 	"path": "Hardware",
 	
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Module to control the d&b audiotechnik amplifiers by OCA.\n\nPlease visit https://www.dbaudio.com/global/en/products/all/product-types/amplifiers/ to know more about those devices.\n\nChataigne Module specific documentation can be found in the README on GitHub:",
 	"url": "https://github.com/madees/dbaudio-OCA-Chataigne-Module",
 	"downloadURL": "https://github.com/madees/dbaudio-OCA-Chataigne-Module/archive/master.zip",
@@ -21,7 +21,8 @@
 		"receiveFrequency",
 		"output/local",
 		"output/remotePort",
-		"pass_through"
+		"pass_through",
+		"customSeparator"
 	],
 
 	"parameters":
