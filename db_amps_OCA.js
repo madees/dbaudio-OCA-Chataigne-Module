@@ -1,4 +1,4 @@
-/* Chataigne Module for d&b audiotechnik amps control via OCA v1.0 (c) Mathieu Delquignies, 06/2024
+/* Chataigne Module for d&b audiotechnik amps control via OCA v1.1 (c) Mathieu Delquignies, 06/2024-10/2025
 ===============================================================================
 This file is a Chataigne Custom Module to remote control d&b audiotechnik amplifiers.
 
@@ -83,6 +83,17 @@ function init()
 	
 	script.setUpdateRate(updateRate);
 	local.scripts.setCollapsed(true);
+
+	// Initial setup com
+	currentModel=local.parameters.model.get();
+	if (currentModel=="5D" || currentModel=="40D" || currentModel=="D40")
+				{
+					local.parameters.output.remotePort.set(50014);
+				}
+			else
+				{
+					local.parameters.output.remotePort.set(30013);
+				}
 }
 
 function moduleParameterChanged(param)
